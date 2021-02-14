@@ -1,0 +1,25 @@
+.wpcf7 {
+	.wpcf7-form {
+		p {
+			display: flex;
+			position: relative;
+			.wpcf7-form-control-wrap {
+				input {
+					border-radius: 5px;
+				}
+			}
+			.submit {
+				background-color: $bg-tertiary;
+				color: $text-primary;
+				border-radius: 5px;
+				border: 1px solid white;
+				position: absolute;
+				right: 0;
+				width: 20%;
+				&:hover {
+					background-color: $bg-secondary;
+				}
+			}
+		}
+	}
+}

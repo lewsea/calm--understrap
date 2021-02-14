@@ -1,0 +1,88 @@
+#wrapper-footer {
+	background-color: $bg-tertiary;
+	padding-bottom: 0;
+	.site-footer {
+		font-size: 14px;
+		.col-md-3 {
+			.card-body {
+				padding-left: 0;
+				.contact-card {
+					i {
+						font-size: 1.2rem;
+						margin-right: 10px;
+					}
+				}
+				.contact-mail,
+				.contact-tel {
+					a {
+						color: $text-secondary;
+						&:hover {
+							color: $text-primary;
+						}
+					}
+				}
+				.card-link {
+					color: $text-secondary;
+					&:hover {
+						color: $text-primary;
+						text-decoration: none;
+					}
+				}
+				.card-desc {
+					font-family: $heebo;
+				}
+				.card-text {
+					color: $text-tertiary-footer;
+					.contact-location {
+						font-family: $heebo;
+					}
+				}
+				.card-title {
+					display: inline-block;
+					&::after {
+						content: "";
+						display: block;
+						height: 1px;
+						background-color: $border-color;
+						width: 50%;
+						margin-top: 8px;
+					}
+				}
+				.footer-social-link {
+					a {
+						font-size: 1.2rem;
+						color: $text-secondary;
+						margin-right: 10px;
+						&:hover {
+							color: $text-primary;
+						}
+					}
+				}
+				#menu-quick-links {
+					li {
+						margin-bottom: 10px;
+						a {
+							color: $text-secondary;
+							&:hover {
+								color: $text-primary;
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer-copy {
+		background-color: $bg-secondary;
+		color: $text-tertiary;
+		font-size: 13px;
+		a {
+			color: $text-secondary;
+			&:hover {
+				color: $text-primary;
+				text-decoration: none;
+			}
+		}
+	}
+}
