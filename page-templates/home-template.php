@@ -46,6 +46,7 @@ if ( is_front_page() ) {
             </div>
         </div>
 	</div>
+
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
 		<div class="row">
@@ -180,6 +181,7 @@ if ( is_front_page() ) {
                             </div>
                         </div>
                     </div>
+                    
                 </section>
 
                 <hr>

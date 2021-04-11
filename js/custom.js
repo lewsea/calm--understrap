@@ -86,7 +86,6 @@ jQuery(function () {
 			},
 			error: function (result) {
 				console.warn(result);
-				console.log("fuck naman oh");
 			},
 		});
 	});
