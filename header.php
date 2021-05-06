@@ -66,42 +66,42 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<!-- The WordPress Menu goes here -->
 				<?php
-                    wp_nav_menu(
-                        array(
-                            'theme_location'  => 'primary',
-                            'container_class' => 'collapse navbar-collapse',
-                            'container_id'    => 'navbarNavDropdown',
-                            'menu_class'      => 'navbar-nav ml-auto',
-                            'fallback_cb'     => '',
-                            'menu_id'         => 'main-menu',
-                            'depth'           => 3,
-                            'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-                        )
-                    );
-				?>
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'primary',
+							'container_class' => 'collapse navbar-collapse',
+							'container_id'    => 'navbarNavDropdown',
+							'menu_class'      => 'navbar-nav ml-auto',
+							'fallback_cb'     => '',
+							'menu_id'         => 'main-menu',
+							'depth'           => 3,
+							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+						)
+					);
+					?>
 
-                <!-- nav icon -->
+				<!-- nav icon -->
 
 				<div class="menu-icon-nav ml-5">
 					<ul class="list-inline d-flex m-0">
 						<li class="list-inline-item mr-3">
-                            <button id="full-page-search-btn" class="btn btn-search" data-toggle="tooltip" data-placement="bottom" title="Full Page Search">
-                                <span class="iconify" data-inline="false" data-icon="fe:search"></span>
-                            </button>
-                        </li>
+							<button id="full-page-search-btn" class="btn btn-search" data-toggle="tooltip" data-placement="bottom" title="Full Page Search">
+								<span class="iconify" data-inline="false" data-icon="fe:search"></span>
+							</button>
+						</li>
 						<li class="list-inline-item">
-                            <button id="btn-right-navbar" class="btn btn-navbar right-navbar-toggler navbar-toggler-right navbar-icon" aria-label="Toggle navigation">
-                                <div data-toggle="tooltip" data-placement="bottom" title="Right Navbar">
-                                    <span class="iconify" data-inline="false" data-icon="fe:bar"></span>
-                                </div>
-                            </button>
-                        </li>
+							<button id="btn-right-navbar" class="btn btn-navbar right-navbar-toggler navbar-toggler-right navbar-icon" aria-label="Toggle navigation">
+								<div data-toggle="tooltip" data-placement="bottom" title="Right Navbar">
+									<span class="iconify" data-inline="false" data-icon="fe:bar"></span>
+								</div>
+							</button>
+						</li>
 					</ul>
 				</div>
 
 			<?php if ( 'container' === $container ) : ?>
 
-            <div id="scroll-top-button"></div>
+			<div id="scroll-top-button"></div>
 
 			</div><!-- .container -->
 			<?php endif; ?>

@@ -159,24 +159,28 @@ if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 // Projects Post Type
 
 function project_post_type() {
-	register_post_type('project', 
-	array(
-		'rewrite' => array('slug' => 'projects'),
-		'labels' => array(
-			'name' => 'Projects',
-			'singular_name' => 'Project',
-			'add_new_item' => 'Add New Project',
-			'edit_item' => 'Edit Project'
-		),
-        'taxonomies' => array( 'category' ),
-		'menu-icon'  => 'dashicons-hammer',
-		'public' => true,
-		'has_archive' => true,
-		'supports' => array(
-			'title', 'thumbnail', 'editor', 'excerpt',
-        ),
+	register_post_type(
+		'project', 
+		array(
+			'rewrite' => array( 'slug' => 'projects' ),
+			'labels' => array(
+				'name' => 'Projects',
+				'singular_name' => 'Project',
+				'add_new_item' => 'Add New Project',
+				'edit_item' => 'Edit Project',
+			),
+			'taxonomies' => array( 'category' ),
+			'menu-icon'  => 'dashicons-hammer',
+			'public' => true,
+			'has_archive' => true,
+			'supports' => array(
+				'title',
+				'thumbnail',
+				'editor',
+				'excerpt',
+			),
 		)
 	);
 }
 
-add_action('init', 'project_post_type');
+add_action( 'init', 'project_post_type' );
